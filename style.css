@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  text-align: center;
+}
+.Nightroit {
+ color: rgb(119, 102, 228);
+color: radial-gradient(circle, rgba(173,162,248,1) 0%, rgba(0,15,119,1) 100%);
+}
+div h1 {
+  font-size: 80px; 
+  display: inline;
+}
+
+.latlong h1 {
+  font-size: 10px;
+}
+.location h1 {
+  font-size: 30px; 
+}
+
+.temperature {
+  font-size: 50px; 
+
+}
+.temperature p {
+  display: inline; 
+}
+
+.temp {
+    color: rgb(173,162,248);
+
+}
+
+.location span {
+  font-size: 60px; 
+  font-weight: 100px;
+}
+
+.scale {
+  color:  rgb(119, 102, 228);
+
+}
+.desc {
+  font-size: 30px; 
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white;
+  background: rgb(119, 102, 228);
+  padding: 20px;
+}
+
+.box:hover{
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.more .box {
+    padding: 15px; 
+    margin: 30px;
+  margin-top: 50px;
+    justify-content: space-between;
+}
+.box {
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+
+  background: rgb(119, 102, 228);
+  border-radius: 10px;
+  margin: 10px;
+  transition: .3s;
+}
