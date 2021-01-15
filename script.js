@@ -53,25 +53,25 @@ document.addEventListener('DOMContentLoaded', function() {
         currentTempInCelcius = Math.round(result.main.temp * 10) / 10;
         ttemp.innerHTML = currentTempInCelcius + " " + String.fromCharCode(176); 
         scale.innerHTML = 'C'
-        city.innerHTML = result.name
-        country.innerHTML = result.sys.country;
+        city.innerHTML = result.name 
+        country.innerHTML =", " + result.sys.country;
+        desc.innerHTML = result.weather[0].main;
         if(!result.name) {
             country.innerHTML = "Opps, please reload!";
         }
-         desc.innerHTML = result.weather[0].main;
         }
       }
     
     more[0].addEventListener("click", function() {
-      getWeather(40.7128, 74.0060)
+      getWeather(40.7128, -74.0060)
     })
    more[1].addEventListener("click", function() {
-       getWeather(51.5074, 0.1278)
+       getWeather(51.5074, -0.1278)
     })
    more[2].addEventListener("click", function() {
      getWeather(28.6139,77.2090)
     })
      more[3].addEventListener("click", function() {
-      getWeather(35.6762,139.6503)
+      getWeather(35.6762, 139.6503)
     })
 })
